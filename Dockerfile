@@ -45,7 +45,7 @@ RUN curl -O https://download.microsoft.com/download/e/4/e/e4e67866-dffd-428c-aac
 #  && unzip operadriver_linux64.zip -d /usr/bin/ \
 #  && chmod +x /usr/bin/operadriver_linux64
 
-RUN pip install -e "file://`pwd`#egg=catcher-modules[s3,airflow]"
+RUN pip install -e "file://`pwd`#egg=catcher-modules[s3,airflow,postgres,mssql,mysql,oracle,sqlite]"
 WORKDIR /opt/catcher/
 
 ## selenium libraries

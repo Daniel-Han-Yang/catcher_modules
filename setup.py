@@ -25,7 +25,7 @@ def extras() -> dict:
         'rabbit': ["pika==1.2.0"],
         'email': ["imbox==0.9.8"],
         'marketo': ["marketorestpython==0.5.14"],
-        'airflow': ["cryptography==36.0.1"],
+        'airflow': ["cryptography==36.0.1", "sqlalchemy==1.4.29"],
         'selenium': ["selenium==4.1.0"],
         'salesforce': ["simple-salesforce==1.11.4"]
     }
